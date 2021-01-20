@@ -25,8 +25,8 @@ int main()
 
     while (choice != '3')
     {
-        printf("For standart room type 1\n");
-        printf("For luxury room type 2\n");
+        printf("For luxury room type 1\n");
+        printf("For standart room type 2\n");
         printf("For exit type 3\n");
         scanf("%s", &choice);
         if (choice == '1')
@@ -107,6 +107,7 @@ int main()
 
         else if (ch2 == '2'){
             printf("You have chosen a spa procedure for 100 leva.\n");
+            toristTax = subTotal * 0.06;
             printf("You owe tourist tax: %.2f\n", toristTax);
             total = subTotal - toristTax;
             printf("Your final offer is:\n");
