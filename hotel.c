@@ -19,16 +19,16 @@ int main(){
         scanf("%s",&choice);
         if(choice=='1'){
             printf("Your choice is standart room.\n");
-            printf("How many night you are going to stay?\n");
+            printf("How many nights you are going to stay?\n");
             scanf("%d", &nights);
-            subTotal = subTotal + (nights * standartRoomPrice);
-            printf("Your bill is: %d\n", subTotal);}
+            subTotal = (subTotal + (nights * standartRoomPrice));
+            printf("Your bill is: %f\n", subTotal);}
         else if (choice=='2'){
             printf("Your choice is luxury room.\n");
-            printf("How many night you are going to stay?\n");
+            printf("How many nights you are going to stay?\n");
             scanf("%d", &nights);
-            subTotal = subTotal + (nights * luxRoomPrice);
-            printf("Your bill is: %d\n", subTotal);}
+            subTotal = (subTotal + (nights * luxRoomPrice));
+            printf("Your bill is: %f\n", subTotal);}
         else if( choice=='3')
         {break;}
         else 
