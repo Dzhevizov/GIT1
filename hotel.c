@@ -62,7 +62,7 @@ int main()
         }
     }
     unsigned short int totalNights = 0;
-    totalNights = nightsSttandartTotattl*roomStandartTottal + nightsLuxuryTottal*roomsLuxuryTottal;
+    totalNights = nightsSttandartTotattl * roomStandartTottal + nightsLuxuryTottal * roomsLuxuryTottal;
 
     if (totalNights > 5 && subTotal < 700)
     {
@@ -88,8 +88,9 @@ int main()
         printf("For free spa procedure for 100 leva type2.\n");
         char ch2 = 0;
         scanf("%s", &ch2);
-        
-        if (ch2 == '1'){
+
+        if (ch2 == '1')
+        {
             double discount2 = 0;
             printf("You have 15 percent discount.\n");
             discount2 = subTotal * 0.15;
@@ -104,9 +105,10 @@ int main()
             printf("Luxury rooms: %d\n", roomsLuxuryTottal);
             printf("Total nights: %d\n", totalNights);
             printf("Final bill: %.2f\n", total);
-        }   
+        }
 
-        else if (ch2 == '2'){
+        else if (ch2 == '2')
+        {
             printf("You have chosen a spa procedure for 100 leva.\n");
             toristTax = subTotal * 0.06;
             printf("You owe tourist tax: %.2f.\n", toristTax);
@@ -118,10 +120,10 @@ int main()
             printf("1 free spa procedure for 100 leva.\n");
             printf("Final bill: %.2f\n", total);
         }
-       
     }
 
-    if (subTotal > 1000){
+    if (subTotal > 1000)
+    {
         printf("You can choose between 20 percent discount, free spa procedure for 100 leva and 2 free dinners for your family.\n");
         printf("For 20 percent discount type1.\n");
         printf("For free spa procedure for 100 leva type2.\n");
@@ -129,7 +131,8 @@ int main()
         char ch3 = 0;
         scanf("%s", &ch3);
 
-        if (ch3 == '1'){
+        if (ch3 == '1')
+        {
             double discount3 = 0;
             printf("You have 20 percent discount.\n");
             discount3 = subTotal * 0.20;
@@ -146,7 +149,8 @@ int main()
             printf("Final bill: %.2f\n", total);
         }
 
-        else if (ch3 == '2'){
+        else if (ch3 == '2')
+        {
             printf("You have chosen a spa procedure for 100 leva.\n");
             toristTax = subTotal * 0.06;
             printf("You owe tourist tax: %.2f.\n", toristTax);
@@ -158,7 +162,8 @@ int main()
             printf("1 free spa procedure for 100 leva.\n");
             printf("Final bill: %.2f\n", total);
         }
-        else if (ch3 == '3'){
+        else if (ch3 == '3')
+        {
             printf("You have chosen 2 free dinners for your family.\n");
             toristTax = subTotal * 0.06;
             printf("You owe tourist tax: %.2f.\n", toristTax);
@@ -170,21 +175,19 @@ int main()
             printf("2 free dinners for your family.\n");
             printf("Final bill: %.2f\n", total);
         }
-    
-    else {
-        toristTax = subTotal * 0.06;
-        printf("You owe tourist tax: %.2f.\n", toristTax);
-        total = subTotal + toristTax;
-        printf("Your final offer is:\n");
-        printf("Standart rooms: %d\n", roomStandartTottal);
-        printf("Luxury rooms: %d\n", roomsLuxuryTottal);
-        printf("Total nights: %d\n", totalNights);
-        printf("Final bill: %.2f\n", total);
-    }
-              
-               
+
+        else
+        {
+            toristTax = subTotal * 0.06;
+            printf("You owe tourist tax: %.2f.\n", toristTax);
+            total = subTotal + toristTax;
+            printf("Your final offer is:\n");
+            printf("Standart rooms: %d\n", roomStandartTottal);
+            printf("Luxury rooms: %d\n", roomsLuxuryTottal);
+            printf("Total nights: %d\n", totalNights);
+            printf("Final bill: %.2f\n", total);
+        }
     }
 
-    
     return 0;
 }
