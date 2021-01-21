@@ -1,13 +1,14 @@
 #include <stdio.h>
 #include <time.h>
+#include <string.h>
 
 int main()
 {
     time_t t;
-    struct tm *tmp;
-    time(&t);
-    t += 14 * 24 * 60 * 60;
-    tmp = localtime(&t);
+    char* c_t;
+    t=time(NULL);
+    t+=14*24*60*60;
+    c_t=ctime(&t);
 
     double luxRoomPrice = 180;
     double standartRoomPrice = 120;
@@ -200,6 +201,6 @@ int main()
         printf("Final bill: %.2f leva\n", total);
     }
 
-    printf("Offer is valid until %02d/%02d/%02d\n", tmp->tm_year % 100, tmp->tm_mon + 1, tmp->tm_mday);
+    printf("Offer is valid until %s", c_t );
     return 0;
 }
