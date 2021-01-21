@@ -92,8 +92,8 @@ int main()
     else if (subTotal > 700 && subTotal < 1000)
     {
         printf("You can choose between 15 percent discount and free spa procedure for 100 leva.\n");
-        printf("For 15 percent discount type1.\n");
-        printf("For free spa procedure for 100 leva type2.\n");
+        printf("For 15 percent discount type 1.\n");
+        printf("For free spa procedure for 100 leva type 2.\n");
         double discount2 = 0;
         char ch2 = 0;
         scanf("%d", &ch2);
@@ -135,9 +135,9 @@ int main()
     else if (subTotal > 1000)
     {
         printf("You can choose between 20 percent discount, free spa procedure for 100 leva and 2 free dinners for your family.\n");
-        printf("For 20 percent discount type1.\n");
-        printf("For free spa procedure for 100 leva type2.\n");
-        printf("For 2 free dinners for your family type3.\n");
+        printf("For 20 percent discount type 1.\n");
+        printf("For free spa procedure for 100 leva type 2.\n");
+        printf("For 2 free dinners for your family type 3.\n");
         double discount3 = 0;
         char ch3 = 0;
         scanf("%d", &ch3);
